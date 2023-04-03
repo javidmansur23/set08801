@@ -15,7 +15,7 @@
 :root{
 
   --main-color: #16b978;
-  --second-color:#092b54;
+  --second-color:#081b54;
 
 }
 
@@ -45,7 +45,17 @@ header{
   padding: 10px 10%;
   transition: 0.2s;
 }
+header.active {
+  background: var(--second-color);
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header.active.logo {
+  color:#fff;
+}
 
+header.active .navbar a {
+  color: #fff;
+}
 .logo{
   display: flex;
   align-items: center;
@@ -169,3 +179,97 @@ header{
   text-align: center;
   
 }
+.about-box h3{
+  font-size: 1re;
+  font-weight: 500;
+  color: var(--second-color);
+  margin: 0 0 0.5rem;
+}
+.about-box h2 {
+ font-size: 1.2rem;
+ color: var(--main-color);
+ letter-spacing: 1px;
+}
+.heading {
+  text-align: center;
+
+}
+.heading h2 {
+  font-size: 2rem;
+  color:var(--main-color)
+  margin-bottom: 0.5rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  flex-wrap: ;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.menu-box {
+  position: relative;
+  flex: 1 1 17rem;
+  box-shadow: 0 4px 4px rgb(14 55 54 / 15%);
+  border-radius: 0.5rem;
+  height: auto;
+}
+
+.menu-img {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden
+  ;
+}
+
+.menu-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.menu-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.menu-box h3{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding: 10px;
+
+}
+
+.menu-box h2{
+  font-size: 1.2rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+  padding: 10px;
+    
+}
+
+.menu-box .bxs-cart-add {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  background: var(--main-color);
+  border-radius: 4px 0 4px 0;
+  
+
+}
+
+.menu-box .bxs-cart-add:hover {
+  background: var(--second-color);
+}
+
+
+
