@@ -271,5 +271,180 @@ header.active .navbar a {
   background: var(--second-color);
 }
 
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
 
+.contact-info {
+  flex: 1 1 20rem;
 
+}
+
+.contact-form {
+
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  font-size: 1.7rem;
+  color: var(--second-color);
+}
+
+.contact-info p {
+   margin: 0.5rem 0 1rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address i {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+
+}
+
+.address span{
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.social{
+  margin-top: 1rem;
+}
+
+.social a {
+  font-size: 24px;
+  color: var(--main-color);
+  margin-right: 1rem;
+}
+
+.social a:hover {
+  color: var(--second-color);
+}
+
+.contact-form form {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 17px;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  border:2px solid var(--main-color);
+  box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%) ;
+}
+
+form input::placeholder,
+textarea::placeholder{
+  color: var(--main-color);
+}
+
+form textarea {
+  resize: none;
+  height: 150px;
+}
+
+form .btn{
+  max-width: 100px;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+form .btn:hover {
+  background: var(--second-color);
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1100px){
+  .home-text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991px){
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+
+@media (max-width: 991px){
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header.active #menu-icon {
+    color: #fff
+  }
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--second-color);
+    box-shadow: 0 4px 4px rgb(14 55 54 / 15%);
+    transition: 0.2s ease;
+    text-align: right;
+  }
+  .navbar .active {
+    top: 100%;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+    color: #fff;
+  }
+  .home-text h1{
+    font-size: 2.4rem;
+    
+  }
+  .about h1 {
+    font-size: 2rem;
+  }
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+  .contact-info h2 {
+    font-size: 1.6rem;
+  }
+  @media (max-width:360px;){
+    .home-text span{
+      font-size: 0.8rem;
+    }
+  .home-text h1 {
+     font-size: 2rem;
+  }
+  .home-text p{
+    font-size: 0.9rem;
+  }
+
+}
+}
