@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: rem;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -267,9 +267,6 @@ header.active .navbar a {
 
 }
 
-.menu-box .bxs-cart-add:hover {
-  background: var(--second-color);
-}
 
 .contact-container {
   display: flex;
@@ -278,6 +275,7 @@ header.active .navbar a {
   gap: 1rem;
   margin-top: 2rem;
 }
+
 
 .contact-info {
   flex: 1 1 20rem;
@@ -299,6 +297,38 @@ header.active .navbar a {
 .contact-info p {
    margin: 0.5rem 0 1rem;
 }
+
+
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.signup-info {
+  flex: 1 1 20rem;
+
+}
+
+.signup-form {
+
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-info h2 {
+  font-size: 1.7rem;
+  color: var(--second-color);
+}
+
+.signup-info p {
+   margin: 0.5rem 0 1rem;
+}
+
 
 .address {
   display: flex;
@@ -337,6 +367,7 @@ header.active .navbar a {
   display:flex;
   flex-direction: column;
 }
+
 
 form input,
 textarea {
@@ -435,6 +466,7 @@ form .btn:hover {
   .contact-info h2 {
     font-size: 1.6rem;
   }
+  
   @media (max-width:360px;){
     .home-text span{
       font-size: 0.8rem;
