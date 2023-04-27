@@ -5,296 +5,386 @@
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <title>Dean Takeaway</title>
+         
+         <!--Box Icons-->
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
          <!-- Link to CSS-->
          <link rel="stylesheet" href="style.css">
-         <!--Box Icons-->
-         <link rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.main.css">
-
-
     </head>
 
     <body>
-    <!-- Navbar-->
-    <header>
-         <a href="#" class="logo"><img src="img/logo.png" alt="">Dean Takeaway</a>
-         <div class="bx bx-menu" id="menu-icon"></div>
+    <nav>
+      <header>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="">Dean Takeaway</a>
+        <ul class="navbar" id="mainListDiv">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#menu">Menu</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="javascript:void(0)" class="signup">Sign Up</a></li>
+        </ul>
+        <a href="cart.html" class="cart-menu">
+          <i class="bx bx-cart bx-sm"></i>
+          <span>3</span>
+        </a>
+        <a href="javascript:void(0)" class="search"><i class='bx bx-search-alt-2 bx-sm' ></i></a>
+        <a href="javascript:void(0)" class="bx bx-menu bx-md" id="mediaButton"></a>
+      </header>
+    </nav>
 
-         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about us">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#register">Sign Up</a></li>
-            
-
-         </ul>
-    </header>
     <!--Home-->
     <section class="home" id="home">
       <div class="home-text">
-         <span>Welcome to Our Online Food Delivery Service (indian cuisine)</span>
-         <h1> DEAN TAKEAWAY <br>Fresh food, Collection or Delivery.</h1>
+         <span>Online Food Delivery Service <br><span class="badge">indian cuisine</span></span>
+         <h1>Fresh Food, Collection or Delivery</h1>
          <p> One of the best Indian takeaways in Edinburgh. We are serving tasty food to the customer and giving the best customer service. 
           We got very hardworking and well-trained staff. 
-          Order food from our website and you can collect your food or we can deliver the food to your address.</p>
-         <a href="#" class="btn">Menu</a>
+          </p>
+         <a href="#menu" class="btn">Menu</a>
 
       </div>
       <div class="home-img">
-         <img src="img/bg1.jpeg">
+         <img src="img/hero.png">
       </div>
     </section>
+
     <!--Our Offer-->
-    <section class="about us" id="about us">
+    <section class="about" id="about">
       <h1>Today's Special Offer</h1>
-      <p> You can find all Indian & Bangladeshi traditional food in Dean Takeaway.
-        We are serving tasty food to the customer and giving the best customer service.
-        Our staff are very hardworking, well trained and are here to help you. The chef can make any special 
+      <p> You can find all Indian & Bangladeshi traditional food in <strong class="color-main">Dean Takeaway</strong>. Our chef can make any special 
         dishes for the customer which one is not on the Menu.
         Order food from our website and you can collect your food or we can deliver the food to your
-        home address. Customers can pay for food through our website, card or cash, We also take payment over the phone.
-        We have a special offer for all customers. We also give a 10% discount for our Register customers
-        and 20% for Students. </p>
+        home address. 
+        </p>
+        <p>
+          Customers can pay for food through our website, card or cash, We also take payment over the phone.
+        We have a special offer for all customers. We also give a <b class="color-main">10% discount for our Register customers</b>
+        and <b class="color-main">20% for Students</b>. 
+        </p>
 
-      <!--Box 1-->
       <div class="about-container">
-         <div class="about-box">
-            <div class="box-img">
-               <img src="img/about1.jpeg">
-      </div>
-      <h3> Chicken or Lamb Mix Dish</h3>
-      <h2> £11.00 </h2>
-      </div>
-      <!--Box 2-->
-      <div class="about-container">
-         <div class="about-box">
-            <div class="box-img">
-               <img src="img/about2.jpeg">
-      </div>
-      <h3> Chicken or Beef Karai & Rice or Naan</h3>
-      <h2> £11.00 </h2>
-      </div>
-      <!--Box 3-->
-      <div class="about-container">
-         <div class="about-box">
-            <div class="box-img">
-               <img src="img/about3.jpeg">
-      </div>
-      <h3> Chicken or Lamb Korma & Rice or Naan</h3>
-      <h2> £11.00 </h2>
-      </div>
-  
-   <!--Box 4-->
-   <div class="about-container">
-      <div class="about-box">
-         <div class="box-img">
-            <img src="img/about4.jpeg">
-   </div>
-   <h3> Mix Thali</h3>
-   <h2> £11.00 </h2>
-   </div>
-   </div>
-</section>
-<!--Shop-->
-<section class="menu" id="menu"></section>
-     <div class="heading">
-      <h1>Our Menu</h1>
-      <p> Please Order food from our Menu. One of the best Indian cuisine. Our chef is very experienced and he can make any special dishes which one not included on
-        our Menu. Please get in touch and let us know your special choices. We are more than happy to help a customer. We also care about customers who got food allergies and want a gluten-free meal, Please talk to our specialist staff for more details. 
+        <div class="card">
+          <div class="card-img">
+            <img src="img/about1.jpeg">
+          </div>
+          <div class="card-flex">
+            <h3> Chicken or Lamb Mix Dish</h3>            
+          </div>
+          <div class="price">
+            <h2> £11.00 </h2>
+            <a href="" class="cart-add-btn">
+              <i class='bx bxs-cart-add bx-sm'></i>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/about2.jpeg">
+          </div>
+          <div class="card-flex">
+            <h3> Chicken or Lamb Korma & Rice or Naan</h3>            
+          </div>
+          <div class="price">
+            <h2> £11.00 </h2>
+            <a href="" class="cart-add-btn">
+              <i class='bx bxs-cart-add bx-sm'></i>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/about3.jpeg">
+          </div>
+          <div class="card-flex">
+            <h3> Chicken or Lamb Korma & Rice or Naan</h3>            
+          </div>
+          <div class="price">
+            <h2> £11.00 </h2>
+            <a href="" class="cart-add-btn">
+              <i class='bx bxs-cart-add bx-sm'></i>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/about4.jpeg" alt="">
+          </div>
+          <div class="card-flex">
+            <h3> Mix Thali</h3>            
+          </div>
+          <div class="price">
+            <h2> £11.00 </h2>
+            <a href="" class="cart-add-btn">
+              <i class='bx bxs-cart-add bx-sm'></i>
+            </a>
+          </div>
+        </div>
+      </div>  
+      
+    </section>
+
+    <!--Shop-->
+    <section class="menu" id="menu">
+      <h1 class="color-main">Our Menu</h1>
+      <p> Our chef is very experienced and he can make any special dishes which one not included on
+        our Menu.
       </p>
-
-     </div>
      <div class="menu-container">
-       <div class="menu-box"></div>
-       <div class="menu-img">
-         <img src="img/menu1.jpg" alt="">
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu1.jpg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3> Vegtable Pakora (stater)</h3>            
+        </div>
+        <div class="price">
+          <h2> £4.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
        </div>
-       <h3>Vegtable Pakora (stater)</h3>
-       <h2>£4.95</h2>
-       
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu2.jpg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3> Tandori Chicken (stater)</h3>            
+        </div>
+        <div class="price">
+          <h2> £6.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
        </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu3.jpeg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3> Vegtable Samosa (stater)</h3>            
+        </div>
+        <div class="price">
+          <h2> £4.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu4.jpg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3> Mix Kabab (stater)</h3>            
+        </div>
+        <div class="price">
+          <h2> £6.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu5.avif" alt="">
+        </div>
+        <div class="card-flex">
+          <h3> Chicken/Lamb Kormar (Main Course)</h3>            
+        </div>
+        <div class="price">
+          <h2> £9.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu6.avif" alt="">
+        </div>
+        <div class="card-flex">
+          <h3>Chicken/Lamb Tikka Massala (Main Course)</h3>
+        </div>
+        <div class="price">
+          <h2> £9.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu7.jpeg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3>Chicken/Lamb Saag (Main Course)</h3>
+        </div>
+        <div class="price">
+          <h2> £9.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+       <div class="card">
+        <div class="card-img">
+          <img src="img/menu9.jpeg" alt="">
+        </div>
+        <div class="card-flex">
+          <h3>Chicken/Lamb Shaslik(Main Course)</h3>
+        </div>
+        <div class="price">
+          <h2> £11.95 </h2>
+          <a href="" class="cart-add-btn">
+            <i class='bx bxs-cart-add bx-sm'></i>
+          </a>
+        </div>
+       </div>
+     </div> 
+    </section>
 
-       <div class="menu-container">
-         <div class="menu-box"></div>
-         <div class="menu-img">
-           <img src="img/menu2.jpg" alt="">
-         </div>
-         <h3>Tandori Chicken (stater)</h3>
-         <h2>£6.95</h2>
-         
-         </div>
-
-         <div class="menu-container">
-            <div class="menu-box"></div>
-            <div class="menu-img">
-              <img src="img/menu3.jpeg" alt="">
-            </div>
-            <h3>Vegtable Samosa (stater)</h3>
-            <h2>£4.95</h2>
-            
-            </div>
-
-         <div class="menu-container">
-               <div class="menu-box"></div>
-               <div class="menu-img">
-                 <img src="img/menu4.jpg" alt="">
-               </div>
-               <h3>Mix Kabab (stater)</h3>
-               <h2>£6.95</h2>
-               
-               </div>
-
-          <div class="menu-container">
-                  <div class="menu-box"></div>
-                  <div class="menu-img">
-                    <img src="img/menu5.avif" alt="">
-                  </div>
-                  <h3>Chicken/Lamb Kormar (Main Course)</h3>
-                  <h2>£9.95</h2>
-                  
-                  </div>
-
-            <div class="menu-container">
-                     <div class="menu-box"></div>
-                     <div class="menu-img">
-                       <img src="img/menu6.avif" alt="">
-                     </div>
-                     <h3>Chicken/Lamb Tikka Massala (Main Course)</h3>
-                     <h2>£9.95</h2>
-                     
-            </div>
-
-             <div class="menu-container">
-                        <div class="menu-box"></div>
-                        <div class="menu-img">
-                          <img src="img/menu7.jpeg" alt="">
-                        </div>
-                        <h3>Chicken/Lamb Saag (Main Course)</h3>
-                        <h2>£9.95</h2>
-                        
-                </div>
-
-                <div class="menu-container">
-                           <div class="menu-box"></div>
-                           <div class="menu-img">
-                             <img src="img/menu8.jpeg" alt="">
-                           </div>
-                           <h3>Cilli Gralic Chicken(Main Course)</h3>
-                           <h2>£9.95</h2>
-                           
-                  </div>
-
-                  <div class="menu-container">
-                              <div class="menu-box"></div>
-                              <div class="menu-img">
-                                <img src="img/menu9.jpeg" alt="">
-                              </div>
-                              <h3>Chicken/Lamb Shaslik(Main Course)</h3>
-                              <h2>£11.95</h2>
-                              
-                  </div>
-
-                   <div class="menu-container">
-                                 <div class="menu-box"></div>
-                                 <div class="menu-img">
-                                   <img src="img/menu10.jpg" alt="">
-                                 </div>
-                                 <h3>Pilu Rice/Plain Rice</h3>
-                                 <h2>£2.95</h2>
-                                 
-                  </div>
-
-                  <div class="menu-container">
-                                    <div class="menu-box"></div>
-                                    <div class="menu-img">
-                                      <img src="img/menu11.jpg" alt="">
-                                    </div>
-                                    <h3>Garlic/Plain Naan</h3>
-                                    <h2>£2.95</h2>
-                                   
-                  </div>
-
- 
-     </div>
+    <!--Recipe-->
+    <section class="about" style="background: #eee;">
+      <h1>Recipe</h1>
+      <video style="width: 100%;height: auto;" controls muted autoplay loop>
+        <source src="video/CookingVideo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
 
       <!--Contact Us-->
-
-      <section class="contact" id="contact">
-        <div class="heading">
-        <h2> Contact Us</h2>
-        <p> Contact us if you need any ideas about special meal. Our staff are here to help. 
- 
+    <section class="contact" id="contact">
+      <h1>Contact Us</h1>
+      <p>Contact us if you need any ideas about special meal. Our staff are here to help.</p>
+      <p>  Please get in touch and let us know your special choices. We are more than happy to help a customer. We also care about customers who got food allergies and want a gluten-free meal, Please talk to our specialist staff for more details. 
         </p>
-       </div>
-       <div class="contact-img">
-         <img src="img/contact.jpg">
-      </div>
-      
-       <div class="contact-container">
-          <div class="contact-info">
-           <h2>Get In Touch</h2>
-           <p> Please contact us and order your lovely meal.
- 
-          </p>
-          <div class="address">
-           <i class='bx bxs-map'>          <span>Edinburgh</span></i>
-           <i class='bx bxs-phone'>        <span>0044</span></i>
-           <i class='bx bxs-envelope'></i> <span>contact@dean.com</span>
-          </div>
-          <div class="social">
-           <a href="#"><i class='bx bx1-facebook'></i></a>
-          </div>
-          </div>
- 
-          <div class="contact-form">
-           <form action="">
-             <input type="text" placeholder="Name*">
-             <input type="email" name="" id="" placeholder="Email*">
-             <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-             <input type="button" value="Submit" class="btn">
-           </form>
-          </div>
-       </div>
-      </section>
- 
-
-     
-         <!--Sign Up-->
-         <section class="signup" id="signup">
-          <div class="heading">
-          <h2> Sign Up</h2>
-          <p> Please Register With US. 
-   
-          </p>
+        <div class="contact-form">
+          <form action="">
+            <input type="text" placeholder="Name*">
+            <input type="email" name="" id="" placeholder="Email*">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="button" value="Submit" class="btn">
+          </form>
          </div>
-         <div class="signup-img">
-           <img src="img/signup.jpg">
-        </div>
-        
-         <div class="signup-container">
-            <div class="signup-info">
-            <div class="signup-form">
-             <form action="">
-               <input type="text" placeholder="FullName*">
-               <input type="email" name="" id="" placeholder="Email*">
-               <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-               <input type="button" value="Submit" class="btn">
-             </form>
-            </div>
-         </div>
-        </section>
-
-       
+    </section>
 
      <!--Copyright-->
      <div class="copyright">
       <p>&#169; Javid Mansur. Edinburgh Napier University. 2023</p>
      </div>
+     
+     <!--Modals-->
+     <div class="modal">
+         <div class="modal-content">             
+             <!-- <span class="close-button">×</span> -->
+             <form class="modal-content" action="#">
+              <span class="close-button">×</span>
+              <div class="container">
+                <h2>Sign Up</h2>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="modal-btn cancel">Cancel</button>
+                  <button type="submit" class="modal-btn">Sign Up</button>
+                </div>
+              </div>
+              
+            <p class="modal-bottom">Already registered? <a href="javascript:void(0)" class="login color-main">LOGIN</a></p>
+            </form>
+         </div>
+     </div>
+     <div class="modal2">
+      <div class="modal-content">             
+          <!-- <span class="close-button">×</span> -->
+          <form class="modal-content" action="#">
+           <span class="close-button2">×</span>
+           <div class="container">
+             <h2>Login</h2>
+             <br>
+             <input type="text" placeholder="Enter Email" name="email" required>
+       
+             <input type="password" placeholder="Enter Password" name="psw" required>
+       
+             <input type="checkbox" checked /> &nbsp;<small>Remember Me</small>
+                       
+             <div class="clearfix">
+               <button type="submit" class="modal-btn">Login</button>
+             </div>
+           </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal3">             
+        <form class="modal-content" action="">
+         <span class="close-button3">×</span>
+         <div class="container">
+           <h2>Search</h2>
+           <br>
+           <div class="search-div">
+            <input type="text" placeholder="Enter item" required>
+            <!-- <button type="submit" class="modal-btn">&#x1F50D;</button>  -->
+            <button type="submit" class="modal-btn"><i class='bx bx-search-alt-2 bx-sm' ></i></button> 
+           </div>               
+         </div>
+        </form>
+      </div> 
 
 
        <!--Link To JS-->
        <script src="main.js"></script>
+       
+       <script>
+          // Get the modal
+          var modal = document.querySelector(".modal");
+          var signup = document.querySelector(".signup");
+          var modal2 = document.querySelector(".modal2");
+          var login = document.querySelector(".login");
+          var modal3 = document.querySelector(".modal3");
+          var search = document.querySelector(".search");
+          var closeButton = document.querySelector(".close-button");
+          var closeButton2 = document.querySelector(".close-button2");
+          var closeButton3 = document.querySelector(".close-button3");
+
+          function toggleModal() {
+            modal3.classList.remove("show-modal");
+            modal2.classList.remove("show-modal");
+            modal.classList.toggle("show-modal");
+          }
+          function toggleModal2() {
+            modal3.classList.remove("show-modal");
+            modal.classList.remove("show-modal");
+            modal2.classList.toggle("show-modal");
+          }
+          function toggleModal3() {
+            modal.classList.remove("show-modal");
+            modal2.classList.remove("show-modal");
+            modal3.classList.toggle("show-modal");
+          }
+          function windowOnClick(event) {
+              if (event.target === modal) {
+                  toggleModal();
+              }else if(event.target === modal2){
+                toggleModal2();
+              }else if(event.target === modal3){
+                toggleModal3();
+              }
+          }
+          signup.addEventListener("click", toggleModal);
+          login.addEventListener("click", toggleModal2);
+          search.addEventListener("click", toggleModal3);
+          closeButton.addEventListener("click", toggleModal);
+          closeButton2.addEventListener("click", toggleModal2);
+          closeButton3.addEventListener("click", toggleModal3);
+          window.addEventListener("click", windowOnClick);
+       </script>
     </body>
 
 

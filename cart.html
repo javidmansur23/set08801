@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Dean Takeaway | Cart</title>
+         
+         <!--Box Icons-->
+         
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+         <!-- Link to CSS-->
+         <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <nav>
+      <header>
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="">Dean Takeaway</a>
+
+        <ul class="navbar" id="mainListDiv">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+           <li><a href="javascript:void(0)" class="signup">Sign Up</a></li>
+        </ul>       
+        
+        <a href="cart.html" class="cart-menu">
+          <i class="bx bx-cart bx-sm"></i>
+          <span>3</span>
+        </a>
+        <a href="javascript:void(0)" class="search"><i class='bx bx-search-alt-2 bx-sm' ></i></a>
+        <a href="javascript:void(0)" class="bx bx-menu bx-md" id="mediaButton"></a>
+      </header>
+    </nav>
+
+<!--Shop-->
+<section class="cart">
+  <h1 class="color-main">Cart</h1>
+  <div style="overflow-x: auto;">
+    <table class="table">
+     <thead>
+      <tr>
+        <th class="left">Item</th>
+        <th class="right">Unit Price</th>
+        <th>Qty</th>
+        <th class="right">Subtotal</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td>Vegtable Pakora (stater)</td>
+        <td class="right">£4.95</td>
+        <td class="center qty">
+          <a href=""><i class='bx bx-minus-circle bx-sm'></i></a>
+          <b>2</b>
+          <a href=""><i class='bx bx-plus-circle bx-sm'></i></a>
+        </td>
+        <td class="right">£9.90</td>
+      </tr>
+      <tr>
+        <td>Mix Kabab (stater)</td>
+        <td class="right">£6.95</td>
+        <td class="center qty">
+          <a href=""><i class='bx bx-minus-circle bx-sm'></i></a>
+          <b>1</b>
+          <a href=""><i class='bx bx-plus-circle bx-sm'></i></a>
+        </td>
+        <td class="right">£6.95</td>
+      </tr>
+      <tr>
+        <td>Chicken/Lamb Kormar (Main Course)</td>
+        <td class="right">£9.95</td>
+        <td class="center qty">
+          <a href=""><i class='bx bx-minus-circle bx-sm'></i></a>
+          <b>1</b>
+          <a href=""><i class='bx bx-plus-circle bx-sm'></i></a>
+        </td>
+        <td class="right">£9.95</td>
+      </tr>
+     </tbody>
+     <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td class="right"><b>Total:</b></td>
+        <td class="right"><b>26.80</b></td>
+      </tr>
+     </tfoot>
+    </table>
+  </div>
+  <div style="margin-top: 30px;">
+    <a href="checkout.html" class="btn">Checkout</a>
+  </div>
+</section>
+
+
+     <!--Copyright-->
+     <div class="copyright">
+      <p>&#169; Javid Mansur. Edinburgh Napier University. 2023</p>
+     </div>
+     
+
+    
+     <div class="modal">
+         <div class="modal-content">
+             
+             <!-- <span class="close-button">×</span> -->
+             <form class="modal-content" action="#">
+              <span class="close-button">×</span>
+              <div class="container">
+                <h2>Sign Up</h2>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" required>
+          
+                <input type="password" placeholder="Enter Password" name="psw" required>
+          
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                          
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="modal-btn cancel">Cancel</button>
+                  <button type="submit" class="modal-btn">Sign Up</button>
+                </div>
+              </div>
+              <p class="modal-bottom">Already registered? <a href="javascript:void(0)" class="login color-main">LOGIN</a></p>
+            </form>
+         </div>
+     </div>
+     <div class="modal2">
+      <div class="modal-content">             
+          <!-- <span class="close-button">×</span> -->
+          <form class="modal-content" action="#">
+           <span class="close-button2">×</span>
+           <div class="container">
+             <h2>Login</h2>
+             <br>
+             <input type="text" placeholder="Enter Email" name="email" required>
+       
+             <input type="password" placeholder="Enter Password" name="psw" required>
+       
+             <input type="checkbox" checked /> &nbsp;<small>Remember Me</small>
+                       
+             <div class="clearfix">
+               <button type="submit" class="modal-btn">Login</button>
+             </div>
+           </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal3">             
+        <form class="modal-content" action="">
+         <span class="close-button3">×</span>
+         <div class="container">
+           <h2>Search</h2>
+           <br>
+           <div class="search-div">
+            <input type="text" placeholder="Enter item" required>
+            <button type="submit" class="modal-btn"><i class='bx bx-search-alt-2 bx-sm' ></i></button> 
+           </div>               
+         </div>
+        </form>
+      </div>
+
+
+       <!--Link To JS-->
+       <script src="main.js"></script>
+       
+       <script>
+        // Get the modal
+        var modal = document.querySelector(".modal");
+        var signup = document.querySelector(".signup");
+        var modal2 = document.querySelector(".modal2");
+        var login = document.querySelector(".login");
+        var modal3 = document.querySelector(".modal3");
+        var search = document.querySelector(".search");
+        var closeButton = document.querySelector(".close-button");
+        var closeButton2 = document.querySelector(".close-button2");
+        var closeButton3 = document.querySelector(".close-button3");
+
+        function toggleModal() {
+            modal3.classList.remove("show-modal");
+            modal2.classList.remove("show-modal");
+            modal.classList.toggle("show-modal");
+          }
+          function toggleModal2() {
+            modal3.classList.remove("show-modal");
+            modal.classList.remove("show-modal");
+            modal2.classList.toggle("show-modal");
+          }
+          function toggleModal3() {
+            modal.classList.remove("show-modal");
+            modal2.classList.remove("show-modal");
+            modal3.classList.toggle("show-modal");
+          }
+        function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }else if(event.target === modal2){
+              toggleModal2();
+            }else if(event.target === modal3){
+              toggleModal3();
+            }
+        }
+        signup.addEventListener("click", toggleModal);
+        login.addEventListener("click", toggleModal2);
+        search.addEventListener("click", toggleModal3);
+        closeButton.addEventListener("click", toggleModal);
+        closeButton2.addEventListener("click", toggleModal2);
+        closeButton3.addEventListener("click", toggleModal3);
+        window.addEventListener("click", windowOnClick);
+      </script>
+    </body>
+
+
+
+</html>
