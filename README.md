@@ -3,4 +3,4 @@ Online Food Delivery ( Project )
 I have used for the Project : 
 HTML
 CSS
-Java Script
+and Java Script
